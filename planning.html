@@ -1,0 +1,87 @@
+
+
+</head><body><h1>Estudiante 4: Propiedades básicas de CSS, Display: inline, block, inline-block</h1>
+<br>
+
+<h3>Objetivo General</h3><h3>
+<br>
+Identificar las características de las propiedades básicas de CSS, Display: inline, block, inline-block
+<br>
+</h3><h3>Objetivos Especificos</h3>
+<br>
+Identificar las catacterísticas de lenguaje CSS
+<br>
+Identificar los elementos en linea o "IN LINE"
+<br>
+Identificar los elementos en bloque o "INLINE-BLOCK"
+<br>
+
+<h2>Materiales</h2>
+<br>
+
+las hojas de estilo en cascada o CSS (Cascading Style Sheets en inglés) recuperado de:<br>
+	https://www.ciudadano2cero.com/aprender-css-basico-desde-cero/<br>
+Aprender CSS nivel personalizado web recuperado de:<br>
+	https://ebweb.es/personalizado-web-aprender-css/<br>
+¿Qué diferencias hay entre display:block, inline e inline-block en CSS? recuperado de:<br>
+	https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx<br><br>
+
+<h2>Contenido</h2><br>
+
+<h3>Características básicas de lenguaje CSS</h3><br>
+Si HTML es el lenguaje con el que se construyen los contenidos de una página, las hojas de estilo CSS son el lenguaje en el que se usa para trabajar el diseño de cualquier web actual.
+<br><br>
+<h3>¿Cómo funcionan las hojas de estilo en cascada?</h3>
+<br><br>
+Las hojas de estilo CSS son un conjunto reglas que enumeran en un fichero .css y que describen el aspecto que deben tener los diferentes elementos HTML de una página.
+<br><br>
+Lo interesante de esto es que funcionan con una filosofía de patrones o plantillas, es decir, no es necesario especificar cada uno de los elementos, sino que se pueden definir reglas como estas dos:
+<br><br>
+	“Los títulos de nivel 1 y 2 han de ser de color negro y un tamaño de fuente de 16 y 14 pixeles respetivamente.”<br>
+	“El texto de los párrafos están alineados a la izquierda, tienen un tamaño de fuente de 12 pixeles y un color gris oscuro.”<br><br>
+
+A modo de comparación, si dominas el uso de estilos en Microsoft Word, verás que esto se parece mucho al concepto de estilo en Word, aunque las CSS son infinitamente más potentes que Word en todas sus posibilidades.
+<br><br>
+<h3>Los conceptos clave en las hojas de estilo CSS</h3>
+<br><br>
+Estos son los conceptos clave que hay que tener claros en todo esto.
+<br><br>
+<h3>Reglas, selectores y propiedades</h3><br>
+En el ejemplo anterior tenemos un total de 3 reglas, cada una se compone de un selector que indican a qué elementos HTML aplica la regla que es el texto que precede a las llaves de apertura y cierre de la regla. En la primera regla, el selector es “h1, h2”, en la segunda “h2” y en la tercera “p”.
+<br><br>
+Cada regla se compone a su vez de propiedades que especifican qué exactamente se hará con esos los elementos HTML a los que aplica.
+<br><br>
+El selector de la primera regla, por ejemplo, indica que esta regla se refiere a los elementos HTML &lt;"h1"&gt; y &lt;"h2"&gt; y que a ellos se aplicarán el color negro (propiedad “color”) y un tamaño de letra de 16 pixeles al texto (propiedad “font-size”).
+<br><br>
+Hay cientos de propiedades de las cuales destacaré luego las que, en mi experiencia, me han parecido las más frecuentemente usadas y más útiles. En cuanto a los selectores, los ejemplos han sido triviales puesto que se refieren a elementos HTML sin más, pero hay formas mucho más sofisticadas de diseñar selectores.
+<br><br>
+<h3>La cascada: herencia, sobreescritura y conflictos de estilos</h3><br>
+El nombre de hojas de estilo en “cascada” no es casual, expresa que los estilos que especifican con reglas se pueden heredar de una manera jerárquica.
+<br><br>
+<h3>¿Qué diferencias hay entre display:block, inline e inline-block en CSS?</h3><br>
+<h3>Elementos en línea (inline)</h3><br>
+Para explicarlo de manera sencilla, y simplificando, ciertas etiquetas HTML no afectan en absoluto al flujo de los demás elementos, limitándose a marcar ciertos fragmentos con una determinada semántica y dejando que el texto y otros elementos contiguos sigan fluyendo en la misma línea, colocándose a ambos lados de dicho elemento.
+<br><br>
+Ejemplos de estas etiquetas son: &lt;"a"&gt;, &lt;"em"&gt;,&lt;"del"&gt;... y quizá la más útil de todas: la etiqueta &lt;"span"&gt;, que se usa para envolver elementos en-línea para darles estilo sin cambiar su comportamiento. A estos elementos HTML se les llama elementos de línea o, incluso más a menudo, por su denominación en inglés: elementos "inline".
+<br><br>
+<h3>Elementos en Bloque</h3> (Block)<br>
+Por el contrario, ciertas etiquetas se renderizan en el navegador en líneas independientes, no mezcladas con el resto del texto.  Ejemplos de estas etiquetas son los encabezados (&lt;"h1"&gt; hasta &lt;"h6"&gt;), las citas en bloque (&lt;"blockquote"&gt;), por supuesto los párrafos (&lt;"p"&gt;), y quizá la más conocida de todas que es la etiqueta &lt;"div"&gt; usada normalmente para envolver a otros elementos. A estos elementos se les denomina elementos de bloque.
+<br><br>
+Cambio de tipo de visualización y un tercer tipo intermedio<br>
+Bien, aparte de este comportamiento por defecto, es posible cambiar el modo en el que se visualiza/renderiza cualquier elemento HTML de una página usando la propiedad CSS llamada display.
+<br><br>
+Esta propiedad puede tomar muchos valores diferentes, pero los más comunes son estos tres:
+<br><br>
+<h3>* block:</h3> hace que el comportamiento del elemento sea como un bloque.<br>
+<h3>*inline:</h3> el elemento se renderizará en línea con otros elementos.<br>
+<h3>*inline-block:</h3> el elemento tendrá un comportamiento mezcla entre los dos anteriores, que ahora voy a describir.
+<br><br>
+Así por ejemplo, aunque tengamos una etiqueta span que se renderiza en línea por defecto, si le aplicamos la propiedad display:block; se renderizará como un bloque, es decir, sería exactamente igual que si hubiésemos puesto un &lt;"div"&gt;.
+<br><br>
+El tercer valor de la lista anterior es muy interesante ya que permite obtener un comportamiento intermedio entre los otros dos. Los elementos inline-block fluyen con el texto y demás elementos como si fueran elementos en-línea y además respetan el ancho, el alto y los márgenes verticales. Son lo mejor de los dos mundos.
+<br><br>
+<h2>Mockup</h2><br><br>
+https://app.moqups.com/tftkC4XeIe/view/page/ae973f342
+<br><br>
+
+</body></html>
