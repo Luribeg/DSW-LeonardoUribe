@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <img src="img/UNAD.png" alt="logo UNAD" class="logoUnad">
+        <h1>Diseño de sitios WEB <span>#Multimedia CSS</span></h1>
+        <section>
+        <label for="">
+            <img id="menu" src="img/MENU.png" alt="" class="imagenMenu">
+        </label>
+        <div id="fondoMenu">        
+            <nav >
+                <span id="btnCerrar" ><img src="img/close.svg" class="btnCerrar"></span>
+                            <a href="index.html">Inicio</a>
+                            <a href="lecturas.html">Lecturas</a>
+                            <span>Multimedia</span>                              
+                                    <a href="m_gitHub.html" class="submenu">-GitHub</a>
+                                    <a href="m_HTML.html" class="submenu">-HTML</a>
+                                    <a href="m_CSS.html" class="submenu">-CSS</a>                             
+                            <a href="actividades.html">Actividades</a>
+                            <a href="creador.html">Creador</a>
+            </nav>
+        </div>
+        </section>
+    </header>
+    <div id="ventanaEmergente">
+            <span id="btnCerrarEmergente" ><img src="img/close.svg" class="btnCerrar"></span>
+            <iframe id="frameLectura" src="" frameborder="0"></iframe>
+        </div>
+        <section id="portada">
+            <section class="tema">
+                <h2>CSS</h2>
+                <img src="img/CSS.png" alt="" class="logoM">
+                <p>
+                    Una vez que ya has estructurado tu sitio web con la ayuda de HTML se hace necesario darle una presentación para que se vea un sitio atractivo. En esta sección aprenderemos a crear hojas de estilo para darle vida a tu sitio WEB
+                </p>  
+            </section >
+            <!-- ---------------------------------------  -->
+            <section id="contenido">
+                <div class="multimedia">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8cSo0ijtkzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                        <span>¿Qué es CSS?</span><br>
+                         
+                        
+                    </p>
+                </div>
+                <div class="multimedia">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1XSVI_TibrU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                        <span>Historia de CSS</span><br>
+                        Primero nació el HTML, pero con el tiempo surgió la necesidad de darle apariencia
+                        a los documentos HTML y con CSS se logró este objetivo. En este video veremos
+                        una breve historia de cómo surgió este lenguaje.
+                    </p>
+                </div>
+                <div class="multimedia">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bUDxibHgxv4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            <span>Reglas de Estilo, Sintaxis y Herencia</span><br>
+                            Debemos tener claro que el HTML es sólo para estructurar un documento WEB y
+                            con las hojas de estilo se cambia la apariencia del documento, en este video
+                            vamos a aprender la sintaxis como se emplea este lenguaje, la forma como se
+                            crean las reglas y como la herencia afecta cuando se aplica un estilo.
+                        </p>
+                </div>
+                <div class="multimedia">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RWopdL9YREU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            <span>Modelo de caja</span><br>
+                            Para entender cómo el tamaño, los bordes, los márgenes internos y externos
+                            afectan a un elemento HTML, los dejamos con este video.
+                        </p>
+                </div>
+                <div class="multimedia">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F-KCncXMPk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            <span>Flexbox</span><br>
+                            Esta es una de las novedades que trae CSS3, y ayuda para crear diseños bien
+                            interesantes. Este video les va a ayudar a entender todo el potencial de flexbox
+                            para maquetar un sitio web.
+                        </p>
+                </div>
+                <div class="multimedia">
+                        
+                        <p>
+                                <span>Podcast CSS</span><br>
+                                Este es un capítulo tienen una invitada que tenía claro que había que luchar por sus sueños. La primera formación sobre todo esto del HTML y CSS no salió todo lo bien que esperaba, pero lejos de desistir, insistió en aprender y mejorar sobre *frontend* compaginándolo con otros trabajos.
+
+                                <br>
+                         <audio controls preload="auto|metadata|none" autoload loop style="width: 100%;">
+                                <source src="mp3/webreactiva_podcast_92.mp3" type="audio/mpeg" />
+                        </audio>
+                                
+                         </p>
+                    </div>
+
+
+
+            </section>
+    </section>
+    </section>
+    <aside data-lectura="twitter.html" onclick="lectura(this)">
+            <img src="img/twitter-rise.gif" title="Mira lo que pasa en twitter">
+        </aside> 
+        
+    <script src="JS/javaScript.js">   
+    </script> 
+</body>
+</html>
