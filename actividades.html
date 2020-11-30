@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <link rel="stylesheet" href="CSS/estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Actividades</title>
+    <title>Autoevaluación</title>
 </head>
 <body>
     <header>
         <img src="img/UNAD.png" alt="logo UNAD" class="logoUnad">
-        <h1>Diseño de sitios WEB <span>Actividades (EN DESARROLLO)</span></h1>
+        <h1>Diseño de sitios WEB <span>#Autoevaluación</span></h1>
         <section>
         <label for="">
             <img id="menu" src="img/MENU.png" alt="" class="imagenMenu">
@@ -18,14 +18,13 @@
         <div id="fondoMenu">        
             <nav >
                 <span id="btnCerrar" ><img src="img/close.svg" class="btnCerrar"></span>
-                <a href="index.html">Inicio</a>
-                            <a href="lecturas.html">Lecturas</a>
-                            <span>Multimedia</span>                              
+                                    <a href="index.html">Inicio</a>
+                                    <span>Multimedia</span>                              
                                     <a href="m_gitHub.html" class="submenu">-GitHub</a>
                                     <a href="m_HTML.html" class="submenu">-HTML</a>
                                     <a href="m_CSS.html" class="submenu">-CSS</a>                             
-                            <a href="actividades.html">Actividades</a>
-                            <a href="creador.html">Creador</a>
+                            <a href="actividades.html">Autoevaluación</a>
+                            <a href="Creador.html">Desarrollador</a>
             </nav>
         </div>
         </section>
@@ -35,8 +34,27 @@
             <iframe id="frameLectura" src="" frameborder="0"></iframe>
         </div>
         <section id="portada">
+        text-align:center;
+        text-align:center;
+            <section>
+                    <h2>Autoevaluación A</h2>
+                    <img src="img/HTML.png" alt="lectura CSS" class="imgLectura">
+                    <p>
+                        Arriésgate y evalúa el conocimiento básico que has adquirido en html.
+                    </p>
+                    <input type="button" value="Veamos que has aprendido!" data-lectura="actividad_1.html" onclick="lectura(this)">
+            </section>
            
-
+            <section>
+                    <h2>Autoevaluación  B</h2>
+                    <img src="img/HTML_Juego.png" alt="lectura CSS" class="imgLectura">
+                    <p>
+                        En esta actividad encontrar una sopa de letras que te permitirá repasar algunos términos familiares en el desarrollo en HTML.
+                    </p>
+                    <input type="button" value="Veamos que has aprendido!" data-lectura="https://es.educaplay.com/juego/7833988-conoce_html5.html" onclick="lectura(this)">
+            </section>
+           
+            
     </section>
     <aside data-lectura="twitter.html" onclick="lectura(this)">
         <img src="img/twitter-rise.gif" title="Mira lo que pasa en twitter">

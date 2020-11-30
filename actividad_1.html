@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/estilosActividades.css">
+    <title>Autoevaluación A</title>
+</head>
+<body>
+    <fieldset id="marco">
+    <H1>¿Qué tanto has aprendido de html?</H1>
+    </fieldset>
+   
+    <form>
+        <fieldset>
+            <legend>selecciona la opción que consideres correcta.</legend>
+
+                <label for="cmbPregunta1">
+                   1.  HTML es un lenguaje de:
+                </label>
+                <select name="" id="cmbPregunta1">
+                    <option value=0>-</option>
+                    <option value=0>Programación</option>
+                    <option value=1>Marcado</option>
+                    <option value=0>Bases de datos</option>
+                    <option value=0>Ninguna de las anteriores</option>
+                </select>
+
+                <label for="cmbPregunta2">
+                    2.  ¿Cuál de las siguientes etiquetas ocupan por defecto el ancho de la página?
+                    </label>
+                    <select name="" id="cmbPregunta2">
+                        <option value=0>-</option>
+                        <option value=0>img</option>
+                        <option value=0>span</option>
+                        <option value=1>div</option>
+                        <option value=0>Todas de las anteriores</option>
+                    </select>
+                    
+                <label for="cmbPregunta3">
+                        3.  En HTML, el atributo title se emplea para:
+                        </label>
+                        <select name="" id="cmbPregunta3">
+                            <option value=0>-</option>
+                            <option value=0>Definir el título de la página.</option>
+                            <option value=0>Definir el nombre de un elemento.</option>
+                            <option value=1>Proporcionar información adicional sobre un elemento.</option>
+                            <option value=0>Las anteriores respuestas no son correctas.</option>
+                        </select>
+
+                <label for="cmbPregunta4">
+                        4.  ¿Dónde se puede insertar código JavaScript en un documento HTML?
+                        </label>
+                        <select name="" id="cmbPregunta4">
+                            <option value=0>-</option>
+                            <option value=0>En el '< head >'</option>
+                            <option value=0>En el "< body >"</option>
+                            <option value=1>Tanto en el "< head > como en el "< body >".</option>
+                            <option value=0>Si el código está en un fichero aparte, sólo en el "< head >"</option>
+                        </select>
+
+                <label for="cmbPregunta5">
+                        5.  En HTML, para indicar el orden de tabulación entre los controles de un formulario se emplea el atributo:
+                        </label>
+                        <select name="" id="cmbPregunta5">
+                            <option value=0>-</option>
+                            <option value=0>alt</option>
+                            <option value=0>index</option>
+                            <option value=0>tab</option>
+                            <option value=1>tabindex</option>
+                        </select>
+
+                    <input id="boton" type="button" value="Averigua tu calificación" onclick="calificarActividad()">
+        </fieldset>
+        <script>
+            function calificarActividad(){
+            var $puntaje=0;
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta1").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta2").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta3").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta4").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta5").value);
+            
+            alert("Tu calificación fué " + $puntaje + " de 5");
+            }
+            
+        </script>
+
+    </form>
+</body>
+</html>
