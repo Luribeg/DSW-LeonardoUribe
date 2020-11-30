@@ -1,0 +1,102 @@
+{
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+}
+
+label, select{
+    display:block;
+    margin: 5px;
+}
+select{
+    margin-bottom: 20px;
+}
+
+html, body{
+    width:100%; height:95%;
+    background-color: black;
+}
+
+
+fieldset {
+    position: relative;
+  
+    width  : 640px;
+    height : 0 auto;
+    margin : 0 auto;
+
+    border-radius:10px; 
+  
+    background: rgb(255, 255, 255);
+  }
+
+  #marco {
+    position: relative;
+  
+    width  : 640px;
+    height : 0 auto;
+    margin : 0 auto;
+    border-radius:10px; 
+  
+    background: rgb(255, 255, 255);
+  }
+
+
+legend {
+
+    position: relative;
+    font  : 21px sans-serif;
+    text-align:center;
+    border-radius:10px; 
+    text-transform: uppercase;
+
+    width  : 640px;
+    height : 0 auto;
+    margin : 0 auto;
+
+    background: rgb(194, 153, 153);
+  }
+
+H1 {
+    
+    position: relative;
+    text-align: center; color:black;
+    }
+
+
+    #portada section {
+        justify-content: flex-end;
+    }
+
+#boton{
+    
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #9c9090;
+    background-color: #0a435f;
+    border-radius: 6px;
+    border: 2px solid #2b389c;
+    
+}
+    
+select{
+
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 200;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+
+}
+
+label{
+    font-size: auto;
+    color: #000;
+    font-family: 'Open Sans';
+    font-weight: 450;
+}
+    
